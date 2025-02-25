@@ -1,0 +1,11 @@
+<div class="personajes-container">
+    <h1>Personajes de los Universos de Rick y Morty</h1>
+    <div class="personajes-list">
+      <div *ngFor="let personaje of personajes" class="personaje-card">
+        <img [src]="personaje.image" alt="{{ personaje.name }}">
+        <h2>{{ personaje.name }}</h2>
+        <p>Estado: {{ personaje.status }}</p>
+        <p>Especie: {{ personaje.species }}</p>
+      </div>
+    </div>
+  </div>

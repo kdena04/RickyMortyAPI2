@@ -1,0 +1,10 @@
+<h3>Episodios de Rick y Morty</h3>
+<ul class="list-group">
+    @for (episode of episodes; track episode.id) {
+        <li class="list-group-item">
+            <h5>{{ episode.name }}</h5>
+            <p>Episode: {{ episode.episode }}</p>
+            <p>Air Date: {{ episode.air_date }}</p>
+        </li>
+    }
+</ul>
